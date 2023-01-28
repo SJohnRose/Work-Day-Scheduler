@@ -4,6 +4,9 @@
 // Reference to DOM elements
 var saveButtonEl = $('.saveBtn');
 var currentDayEl = $('#currentDay');
+var hours = [9,10,11,12,1,2,3,4,5];
+
+var schedule = {};
 
 $(function () {
   
@@ -14,6 +17,20 @@ $(function () {
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
+  $(saveButtonEl).click(function() {
+    //console.log($(this).parent().attr("id"));
+    for(var i=0; i<hours.length;i++) {
+      
+      var checkHour = "hour-"+hours[i];
+      //console.log(checkHour);
+      if($(this).parent().attr('id') === checkHour) {
+        console.log("selected" + checkHour);
+        localStorage.setItem(checkHour,$(this).prev().val());
+        //saveScheduleLocal();
+      }
+    }
+    //var timeClicked = $(this);
+  });
   //
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -25,11 +42,15 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  // TODO: Add code to display the current date in the header of the page.
+  // Code to display the current date in the header of the page.
   function displayDate() {
     var timeNow = dayjs().format('dddd, MMMM DD[th]');
     console.log(timeNow);
     currentDayEl.text(timeNow);
+  }
+
+  function saveScheduleLocal() {
+
   }
   displayDate();
 });
