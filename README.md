@@ -39,6 +39,7 @@ https://github.com/SJohnRose/Work-Day-Scheduler/blob/main/assets/images/Screensh
 
 ## How to access the app?
 Github Link: https://github.com/SJohnRose/Work-Day-Scheduler 
+
 Deployed App: https://sjohnrose.github.io/Work-Day-Scheduler/
 
 
