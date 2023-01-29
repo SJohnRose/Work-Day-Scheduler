@@ -38,8 +38,8 @@ https://github.com/SJohnRose/Work-Day-Scheduler/blob/main/assets/images/Screensh
 https://github.com/SJohnRose/Work-Day-Scheduler/blob/main/assets/images/Screenshot2.PNG
 
 ## How to access the app?
-Github Link: https://github.com/SJohnRose/Work-Day-Scheduler
-Deployed App: 
+Github Link: https://github.com/SJohnRose/Work-Day-Scheduler 
+Deployed App: https://sjohnrose.github.io/Work-Day-Scheduler/
 
 
 
