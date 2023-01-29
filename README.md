@@ -4,7 +4,10 @@ A simple calendar application that allows a user to save events for each hour of
 ## Features
 
 * Application runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
-* Uses the [Day.js] library to work with date and time. 
+* Uses the Day.js library to work with date and time. 
+* Time blocks for each working hour of the day.
+* Time blocks are colour coded to show past, present or future events.
+* When page is refreshed, the scheduled events are displayed.
 
 ## User Story
 
